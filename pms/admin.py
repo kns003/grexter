@@ -4,11 +4,15 @@ from .models import Building, Room
 
 # Register your models here.
 
+class RoomInlineAdmin(admin.TabularInline):
+    model = Room
+    exclude = ('created_at', 'modified_at', 'name', 'description', 'is_active')
+
 class BuildingAdmin(admin.ModelAdmin):
     exclude = ('created_at', 'modified_at', 'description')
     list_display = ('name', 'address')
     search_fields = ('name', 'landmark_1', 'address')
-
+    inlines = [RoomInlineAdmin]
 
 class RoomAdmin(admin.ModelAdmin):
     exclude = ('created_at', 'modified_at', 'name', 'description')

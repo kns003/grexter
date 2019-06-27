@@ -53,6 +53,9 @@ class Room(GrexterBase):
     bathrooms = models.PositiveIntegerField(default=0)
     ec_acc_number = models.CharField(max_length=100, null=True, blank=True)
 
+    def __str__(self):
+        return self.flat_number
+
     def to_dict(self):
         return {
             'id':self.id,

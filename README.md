@@ -1,5 +1,5 @@
 # grexter
-Portal to add Buildings & Rooms.
+## Portal to add Buildings & Rooms.
 
 1. Clone the repository and intall virtualenv with Python3.5 and activate it
   - `virtualenv -p /usr/bin/python3.5 venv_grexter
@@ -14,3 +14,30 @@ Portal to add Buildings & Rooms.
 8. In Building & Room Listing page, search & filters are provided.
 
 This project is also hosted on Heroku : https://grexter-shashank.herokuapp.com/
+
+To access the API : 
+## Buildings
+
+1) GET all buildings: https://grexter-shashank.herokuapp.com/api/v1/buildings/
+
+2) GET one building by id : https://grexter-shashank.herokuapp.com/api/v1/buildings/1/
+
+3) Create building:
+POST : https://grexter-shashank.herokuapp.com/api/v1/buildings/
+
+```
+{"name": "Aquila", "address": "HSR layout, Bangalore", "landmark_1": "6th sector"}
+```
+4) Update Building:
+PUT : https://grexter-shashank.herokuapp.com/api/v1/buildings/<building_id>
+```
+{"name": "Aquila", "address": "BTM Layout, Bangalore", "landmark_1": "5th sector"}
+```
+## Rooms
+
+1) GET all rooms : https://grexter-shashank.herokuapp.com/api/v1/rooms/
+
+2) GET one room by id : https://grexter-shashank.herokuapp.com/api/v1/rooms/1/
+
+
+

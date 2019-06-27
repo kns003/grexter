@@ -68,12 +68,15 @@ class RoomListCreate(View):
 
     def post(self, request, *args, **kwargs):
         """
-        Sample post data to create building:
+        Sample post data to create room:
 
-        {"name": "Aquila",
-        "landmark_1": "HSR Layout",
-        "landmark_2": "6th sector",
-        "landmark_3": "near bds complex"}
+        {"building_id": 2,
+        "flat_number": "101",
+        "sqft_area": 600,
+        "rent": 10000,
+        "flat_type": "1BHK",
+        "bathrooms": 2,
+        "ec_acc_number": "QWERpoiu"}
         :param request:
         :param args:
         :param kwargs:

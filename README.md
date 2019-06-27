@@ -33,11 +33,39 @@ PUT : https://grexter-shashank.herokuapp.com/api/v1/buildings/<building_id>
 ```
 {"name": "Aquila", "address": "BTM Layout, Bangalore", "landmark_1": "5th sector"}
 ```
+5) Delete Building : 
+DELETE : https://grexter-shashank.herokuapp.com/api/v1/buildings/<building_id>
+
 ## Rooms
 
 1) GET all rooms : https://grexter-shashank.herokuapp.com/api/v1/rooms/
 
 2) GET one room by id : https://grexter-shashank.herokuapp.com/api/v1/rooms/1/
 
+3) Create Room :
+POST : https://grexter-shashank.herokuapp.com/api/v1/rooms/
+
+```
+{"building_id": 2,
+"flat_number": "101",
+"sqft_area": 600,
+"rent": 10000,
+"flat_type": "1BHK",
+"bathrooms": 2,
+"ec_acc_number": "QWERpoiu"}
+```
+4)Update Room 
+PUT : https://grexter-shashank.herokuapp.com/api/v1/rooms/1/
+
+```
+{"flat_number": "101",
+"sqft_area": 700,
+"rent": 15000,
+"flat_type": "2BHK",
+"bathrooms": 2,
+"ec_acc_number": "QWERpoiu"}
+```
+5) Delete Room 
+DELETE : https://grexter-shashank.herokuapp.com/api/v1/rooms/1/
 
 

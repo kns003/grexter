@@ -1,1 +1,1 @@
-web: gunicorn acme.wsgi
+web: gunicorn property.wsgi
